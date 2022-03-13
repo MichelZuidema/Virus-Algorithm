@@ -14,4 +14,6 @@ public class MoveDetails {
     public int getScore() {
         return score;
     }
+
+
 }

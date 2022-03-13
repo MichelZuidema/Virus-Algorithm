@@ -210,11 +210,11 @@ public class VirusGame {
         return winner;
     }
 
-    public void virusSingleGame(VirusStrategy greenPlayer, VirusStrategy redPlayer){
+    public Player virusSingleGame(VirusStrategy greenPlayer, VirusStrategy redPlayer){
         HashMap<Player,VirusStrategy> strategy= new HashMap<>();
         strategy.put(Player.RED, redPlayer);
         strategy.put(Player.GREEN, greenPlayer);
-        game(strategy);
+        return game(strategy);
     }
 
     public void virusTournament(ArrayList<VirusStrategy> algorithms){
